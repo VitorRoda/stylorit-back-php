@@ -21,7 +21,7 @@ class EmailController extends Controller
         $email = new \SendGrid\Mail\Mail();
         $email->setFrom("daniel.araujo@stylorit.com.br", "Contato Stylorit");
         $email->setSubject("Email de contato");
-        $email->addTo("daniel.araujo07@hotmail.com", "Stylorit");
+        $email->addTo("stylorit@hotmail.com", "Stylorit");
         // $email->addTo("roda-vitor2@outlook.com", "Stylorit");
         $email->addContent("text/html", $mensagem);
         $sendgrid = new \SendGrid('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');
